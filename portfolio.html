@@ -23,11 +23,18 @@
   </head>
   <body class="body">
     <!--Шапка-->
-    <!-- <header class="header">
+     <header class="header"> 
       <div class="portfolio__container header__container">
         <a class="logo" href="" lang="en"
           >Web<span class="header__logo--accent">Studio</span></a
         >
+        <button class="menu-toggle--open js-open-menu" type="button" aria-controls="mobile-menu"
+            aria-expanded="false" data-menu-button>
+            <svg class="icon-open-menu" width="40" height="40" aria-label="Мобильное меню">
+              <use class="icon-menu" href="./images/symbol-defs 2.svg#icon-menu_burger">
+              </use>
+            </svg>
+          </button>
         <nav class="navigation">
           <ul class="navigation__list items">
             <li class="link link__items">
@@ -61,8 +68,51 @@
             >
           </li>
         </ul>
+         <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle--close js-close-menu">
+            <svg class="icon-close-menu" width="40" height="40" aria-label="Мобильное меню">
+                <use class="icon-cross" href="./images/symbol-defs 2.svg#icon-close_40px">
+                </use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__nav">
+            <li class="mobile-menu__item link">
+                <a href="" class="mobile-menu__nav-link nav__link--active">Студия</a>
+            </li>
+            <li class="mobile-menu__item link">
+                <a href="" class="mobile-menu__nav-link">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item link">
+                <a href="" class="mobile-menu__nav-link">Контакты</a>
+            </li>
+        </ul>
+        <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__item link">
+                <a href="tel:+380961111111" class="mobile-menu__contacts-link-tel">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__item link">
+                <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link-mail">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="mobile-menu__socials">
+            <li class="mobile-menu__items link">
+                <a href="" class="mobile-menu__socials-link">Instagram</a>
+            </li>
+            <li class="mobile-menu__items link">
+                <a href="" class="mobile-menu__socials-link">Twitter</a>
+            </li>
+            <li class="mobile-menu__items link">
+                <a href="" class="mobile-menu__socials-link">Facebook</a>
+            </li>
+            <li class="mobile-menu__items link">
+                <a href="" class="mobile-menu__socials-link">LinkedIn</a>
+            </li>
+        </ul>
+
+    </div>
       </div>
-    </header> -->
+    </header> 
     <!--Уникальное меню-->
     <main>
       <!--Фильтр кнопки-->
@@ -379,5 +429,6 @@
         </address>
       </div>
     </footer> 
+     <script src="./js/button-menu.js"></script>
   </body>
 </html>

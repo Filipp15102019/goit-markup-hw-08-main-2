@@ -52,7 +52,7 @@
     margin-bottom: 30px;
   }
   @include mq(desktop) {
-    width: 370;
+    width: 370px;
     margin-top: 30px;
     margin-left: 0;
     margin-right: 30px;
@@ -82,7 +82,7 @@
 
 .cards__link:nth-child(2n) {
   @include mq(tablet-only) {
-    margin: 0;
+    margin-right: 0;
   }
 }
 .cards__link:last-child {

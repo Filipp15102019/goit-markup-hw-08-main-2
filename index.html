@@ -29,13 +29,11 @@
         <a class="logo" href="" lang="en"
           >Web<span class="header__logo--accent">Studio</span></a
         >
-         <button type="button" class="menu__button is-open" 
-         data-menu-button
-          aria-expanded="false"
-          aria-controls="menu-container">
-            <svg width="40px" height="40px" aria-label="переключатель мобильного меню">
-              <use class="icon__close" href="./images/symbol-defs 2.svg#icon-close_40px"></use>
-              <use class="icon__menu" href="./images/symbol-defs 2.svg#icon-menu_burger"></use>
+          <button class="menu-toggle--open js-open-menu" type="button" aria-controls="mobile-menu"
+            aria-expanded="false" data-menu-button>
+            <svg class="icon-open-menu" width="40" height="40" aria-label="Мобильное меню">
+              <use class="icon-menu" href="./images/symbol-defs 2.svg#icon-menu_burger">
+              </use>
             </svg>
           </button>
         <nav class="navigation">
@@ -69,133 +67,49 @@
             >
           </li>
         </ul>
-        <!--Mobile menu-->
-        <div class="menu-container" id="menu-container" data-menu>
-          <ul class="list menu-nav">
-            <li class="menu-nav__item">
-              <a href="" class="menu-nav__link menu-nav__link--current"
-                >Студия</a
-              >
+         <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle--close js-close-menu">
+            <svg class="icon-close-menu" width="40" height="40" aria-label="Мобильное меню">
+                <use class="icon-cross" href="./images/symbol-defs 2.svg#icon-close_40px">
+                </use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__nav">
+            <li class="mobile-menu__item link">
+                <a href="" class="mobile-menu__nav-link nav__link--active">Студия</a>
             </li>
-            <li class="menu-nav__item">
-              <a href="./portfolio.html" class="menu-nav__link">Портфолио</a>
+            <li class="mobile-menu__item link">
+                <a href="" class="mobile-menu__nav-link">Портфолио</a>
             </li>
-            <li class="menu-nav__item">
-              <a href="" class="menu-nav__link">Контакты</a>
+            <li class="mobile-menu__item link">
+                <a href="" class="mobile-menu__nav-link">Контакты</a>
             </li>
-          </ul>
+        </ul>
+        <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__item link">
+                <a href="tel:+380961111111" class="mobile-menu__contacts-link-tel">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__item link">
+                <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link-mail">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="mobile-menu__socials">
+            <li class="mobile-menu__items link">
+                <a href="" class="mobile-menu__socials-link">Instagram</a>
+            </li>
+            <li class="mobile-menu__items link">
+                <a href="" class="mobile-menu__socials-link">Twitter</a>
+            </li>
+            <li class="mobile-menu__items link">
+                <a href="" class="mobile-menu__socials-link">Facebook</a>
+            </li>
+            <li class="mobile-menu__items link">
+                <a href="" class="mobile-menu__socials-link">LinkedIn</a>
+            </li>
+        </ul>
 
-          <ul class="list menu-contacts">
-            <li class="menu-contacts__item">
-              <a href="tel:+380961111111" class="menu-contacts__phone"
-                >+38 096 111 11 11</a
-              >
-            </li>
-            <li class="menu-contacts__item">
-              <a href="mailto:info@devstudio.com" class="menu-contacts__mail"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="list menu-socials">
-            <li class="menu-socials__item">
-              <a href="" class="menu-socials__link">Instagram</a>
-            </li>
-            <li class="menu-socials__item">
-              <a href="" class="menu-socials__link">Twitter</a>
-            </li>
-            <li class="menu-socials__item">
-              <a href="" class="menu-socials__link">Facebook</a>
-            </li>
-            <li class="menu-socials__item">
-              <a href="" class="menu-socials__link">LinkedIn</a>
-            </li>
-          </ul>
-        </div>
-        <div class="menu-container" id="menu-container" data-menu>
-          <ul class="list menu-nav">
-            <li class="menu-nav__item">
-              <a href="" class="menu-nav__link menu-nav__link--current"
-                >Студия</a
-              >
-            </li>
-            <li class="menu-nav__item">
-              <a href="./portfolio.html" class="menu-nav__link">Портфолио</a>
-            </li>
-            <li class="menu-nav__item">
-              <a href="" class="menu-nav__link">Контакты</a>
-            </li>
-          </ul>
-
-          <ul class="list menu-contacts">
-            <li class="menu-contacts__item">
-              <a href="tel:+380961111111" class="menu-contacts__phone"
-                >+38 096 111 11 11</a
-              >
-            </li>
-            <li class="menu-contacts__item">
-              <a href="mailto:info@devstudio.com" class="menu-contacts__mail"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="list menu-socials">
-            <li class="menu-socials__item">
-              <a href="" class="menu-socials__link">Instagram</a>
-            </li>
-            <li class="menu-socials__item">
-              <a href="" class="menu-socials__link">Twitter</a>
-            </li>
-            <li class="menu-socials__item">
-              <a href="" class="menu-socials__link">Facebook</a>
-            </li>
-            <li class="menu-socials__item">
-              <a href="" class="menu-socials__link">LinkedIn</a>
-            </li>
-          </ul>
-        </div>
-        <div class="menu-container" id="menu-container" data-menu>
-          <ul class="list menu-nav">
-            <li class="menu-nav__item">
-              <a href="" class="menu-nav__link menu-nav__link--current"
-                >Студия</a
-              >
-            </li>
-            <li class="menu-nav__item">
-              <a href="./portfolio.html" class="menu-nav__link">Портфолио</a>
-            </li>
-            <li class="menu-nav__item">
-              <a href="" class="menu-nav__link">Контакты</a>
-            </li>
-          </ul>
-
-          <ul class="list menu-contacts">
-            <li class="menu-contacts__item">
-              <a href="tel:+380961111111" class="menu-contacts__phone"
-                >+38 096 111 11 11</a
-              >
-            </li>
-            <li class="menu-contacts__item">
-              <a href="mailto:info@devstudio.com" class="menu-contacts__mail"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="list menu-socials">
-            <li class="menu-socials__item">
-              <a href="" class="menu-socials__link">Instagram</a>
-            </li>
-            <li class="menu-socials__item">
-              <a href="" class="menu-socials__link">Twitter</a>
-            </li>
-            <li class="menu-socials__item">
-              <a href="" class="menu-socials__link">Facebook</a>
-            </li>
-            <li class="menu-socials__item">
-              <a href="" class="menu-socials__link">LinkedIn</a>
-            </li>
-          </ul>
-        </div>
+    </div>
       </div>
     </header> 
     <!--Уникальное меню-->
