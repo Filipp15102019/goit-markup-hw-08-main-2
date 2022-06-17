@@ -1,0 +1,32 @@
+/* ***************** */
+/* Logo */
+/* ***************** */
+
+.logo {
+  padding-top: 24px;
+  margin-right: 93px;
+  padding-bottom: 25px;
+  color: var(--accent-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  @include mq(mobile-only) {
+    margin-right: auto;
+  }
+  @include mq(tablet-only) {
+    margin-right: 88px;
+    padding-right: 0;
+  }
+}
+
+.header__logo--accent {
+  color: var(--main-text-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}

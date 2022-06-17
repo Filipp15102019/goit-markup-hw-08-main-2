@@ -1,0 +1,21 @@
+.html {
+  box-sizing: border-box;
+}
+
+/* *,
+*::before,
+*::after{
+  box-sizing: inherit;
+} */
+
+/* ***************** */
+/* Body */
+/* ***************** */
+
+.body {
+  color: var(--main-text-color);
+  background-color: var(--primery-white-color);
+  font-family: "Raleway", "Roboto", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+}

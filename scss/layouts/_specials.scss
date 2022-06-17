@@ -1,0 +1,127 @@
+/* ***************** */
+/* Особенности */
+/* ***************** */
+
+.subtitles {
+  padding-bottom: 10px;
+  margin: 0;
+  color: var(--main-text-color);
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  @include mq(mobile-only) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.text {
+  margin: 0;
+  color: var(--secondary-text-color);
+
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.special__container {
+  @include mq(tablet) {
+    display: flex;
+  }
+}
+
+.special__link {
+  margin: 0px;
+
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @include mq(desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0;
+    padding-right: 30px;
+  }
+
+  &:last-child {
+    padding-right: 0px;
+  }
+}
+.special__list {
+  margin-bottom: 30px;
+
+  @include mq(tablet) {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+    margin-right: 30px;
+  }
+  @include mq(desktop) {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+}
+
+.special__list:nth-child(2n + 2) {
+  @include mq(tablet) {
+    margin: 0;
+  }
+
+  @include mq(desktop) {
+    margin-right: 30px;
+  }
+}
+.special__list:last-child {
+  @include mq(desktop) {
+    margin-right: 0;
+  }
+}
+
+// &:last-child {
+//   margin-bottom: 0px;
+// }
+
+// @include mq(tablet) {
+//   margin-right: 30px;
+// }
+
+// .special__link > & {
+//   @include mq(tablet) {
+//     flex-basis: 270px;
+//   }
+// }
+
+.list__icon:hover,
+.list__icon:focus {
+  fill: var(--accent-color);
+}
+.special__list__icon {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mq(mobile) {
+    width: 100%;
+  }
+  @include mq(tablet) {
+    width: 354px;
+    height: 120px;
+  }
+  @include mq(desktop) {
+    width: 270px;
+    height: 120px;
+  }
+}

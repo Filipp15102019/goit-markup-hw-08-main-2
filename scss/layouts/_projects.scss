@@ -1,0 +1,145 @@
+/* ***************** */
+/* Проэкты */
+/* ***************** */
+
+.heading {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+}
+.desc {
+  font-family: "Roboto";
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+.cards {
+  @include mq(mobile-only) {
+    margin: 0;
+    padding: 0;
+  }
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    margin-top: 0;
+    margin-bottom: -30px;
+    padding-left: 0;
+  }
+  @include mq(desktop) {
+    margin-bottom: 0;
+    margin-top: -30px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.cards__link {
+  @include mq(mobile-only) {
+    width: 450px;
+    margin: 0 0 30px 0;
+    padding: 0;
+  }
+  @include mq(tablet-only) {
+    width: calc((100% - 60px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  @include mq(desktop) {
+    width: 370;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  box-sizing: border-box;
+  background: var(--primery-white-color);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  @include mq(desktop) {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.cards__link:nth-child(2n) {
+  @include mq(tablet-only) {
+    margin: 0;
+  }
+}
+.cards__link:last-child {
+  @include mq(tablet-only) {
+    margin: 0;
+  }
+}
+
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery {
+  @include mq(tablet-only) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.block__desk {
+  display: block;
+  width: 370;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  flex-grow: 1;
+}
+.block__desk .heading {
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.block__desk .desc {
+  margin: 0;
+}
+
+.overlay-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  margin: 0;
+
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: var(--primery-white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .gallery:hover &,
+  .gallery:hover & {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+}

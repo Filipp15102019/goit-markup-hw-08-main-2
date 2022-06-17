@@ -1,0 +1,23 @@
+/* цвет основного текста #212121 */
+/* цвет вторичного текста #757575 */
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+/* background страницы #E5E5E5 */
+/* background футера #2F303A; */
+/* background кнопок #F5F4FA */
+/* тень 0px 4px 4px rgba(0, 0, 0, 0.15); */
+/* цвет мыла и тел. в футере rgba(255, 255, 255, 0.6);
+ */
+
+:root {
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primery-white-color: #ffffff;
+  --bg-color-ourteam: #e5e5e5;
+  --bg-footer: #2f303a;
+  --bg-color-section: #f5f4fa;
+  --bg-color-title: #2f303a;
+  --bg-color-btn-section: #188ce8;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+}
