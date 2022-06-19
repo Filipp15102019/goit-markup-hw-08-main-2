@@ -5,7 +5,8 @@
   text-align: center;
 }
 .hero__container {
-  max-width: 1600px;
+  min-width: 480px;
+  height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -17,6 +18,7 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero/Header_sm.jpg);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -28,7 +30,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero/Header-1_sm@2x.jpg);
+      url(../images/hero/Header_sm@2x.jpg);
   }
 
   @include mq(tablet) {
@@ -45,8 +47,9 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero/Header-2_md@2x.jpg);
+      url(../images/hero/Header_md@2x.jpg);
   }
+
   @include mq(desktop) {
     background-image: linear-gradient(
         to right,
@@ -61,10 +64,12 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero/Header-3_lg@2x.jpg);
+      url(../images/hero/Header_lg@2x.jpg);
   }
 
   @include mq(desktop) {
+    max-width: 1600px;
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
