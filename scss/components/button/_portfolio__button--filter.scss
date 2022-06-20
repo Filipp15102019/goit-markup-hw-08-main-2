@@ -1,10 +1,12 @@
 .portfolio {
-  @include mq(not-desktop) {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include mq(desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-
-  @include mq(mobile) {
+  @include mq(tablet-only) {
     padding-top: 60px;
     padding-bottom: 60px;
   }

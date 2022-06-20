@@ -22,11 +22,11 @@
     align-items: baseline;
     flex-direction: column;
   }
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: baseline;
-    margin: 0;
+    // margin: 0;
   }
 }
 
@@ -50,15 +50,8 @@
 }
 .address {
   font-family: "Roboto";
-
-  @include mq(mobile-only) {
-    padding: 0;
-    margin: 0;
-  }
-  @include mq(desktop) {
-    margin: 0;
-    padding: 0;
-  }
+  padding: 0;
+  margin: 0;
 
   & :hover,
   & :focus {
@@ -114,12 +107,15 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  margin-top: 12px;
+  margin-top: 0;
   margin-bottom: 20px;
 
   @include mq(mobile-only) {
     margin-left: auto;
     margin-right: auto;
+  }
+  @include mq(desktop) {
+    margin-top: 12px;
   }
 }
 .footer__form {

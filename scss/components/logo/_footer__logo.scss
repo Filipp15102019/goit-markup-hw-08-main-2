@@ -4,18 +4,20 @@
 
 .footer__logo {
   padding: 0;
+  margin-bottom: 20px;
 
   @include mq(mobile-only) {
     display: flex;
     align-items: baseline;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
     width: 154px;
     height: 28px;
   }
   @include mq(tablet-only) {
-    margin: 0 auto 0 auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     width: 154px;
     height: 28px;
     align-items: baseline;
@@ -23,6 +25,5 @@
   @include mq(desktop) {
     display: block;
     margin-right: 0;
-    margin-bottom: 20px;
   }
 }
